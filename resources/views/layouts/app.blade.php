@@ -77,7 +77,6 @@
                     $('.menuse').addClass('solid-nav');
                     $('.menuse').addClass('py-0');
                     $('.menuse').removeClass('pt-3');
-                    document.getElementById('logo').style.opacity = 1;
                 }
                 else
                 {
@@ -85,7 +84,6 @@
                     $('.menuse').removeClass('solid-nav');
                     $('.menuse').removeClass('py-0');
                     $('.menuse').addClass('pt-3');
-                    document.getElementById('logo').style.opacity = 0;
                 }
             });
         });
