@@ -12,11 +12,11 @@
         <div class="row">
         @foreach($articles as $article)
             <div class="col-lg-3 col-6">
+                <a href="{{ route('article', $article->id) }}" style="text-decoration: none;">
                 <div class="" style="{{ $agent->isMobile() ? "height: 100px;" : "height: 150px;" }} background-image: url({{ asset('storage/'.str_replace('\\', '/', $article->image)) }}); background-size: cover; background-position: center;"></div>
                 <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-16" }} text-dark font-weight-bold line-height-120 mt-2">
                     {{$article->title}}
                 </p>
-                <a href="{{ route('article', $article->id) }}">
                     <p class="font-size-12" style="color: #C4C4C4;">Читать далее>></p>
                 </a>
             </div>
