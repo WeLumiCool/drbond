@@ -1,0 +1,193 @@
+html,body {
+    height:100%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    background-color: white;
+}
+.roboto {
+    font-family: 'Roboto';
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    /*background-color:grey;*/
+    /*background-image: url('https://to-moore.com/images/beeline.png');*/
+    background-repeat: no-repeat;
+    /*background-color: white;*/
+    background-position: center;
+}
+.font-size-6 {
+    font-size: 6px!important;
+}
+.font-size-8 {
+    font-size: 8px!important;
+}
+.font-size-10 {
+    font-size: 10px!important;
+}
+.font-size-12 {
+    font-size: 12px!important;
+}
+.font-size-14 {
+    font-size: 14px!important;
+}
+.font-size-16 {
+    font-size: 16px!important;
+}
+.font-size-18 {
+    font-size: 18px!important;
+}
+.font-size-20 {
+    font-size: 20px!important;
+}
+.font-size-22 {
+    font-size: 22px!important;
+}
+.font-size-24 {
+    font-size: 24px!important;
+}
+.font-size-26 {
+    font-size: 26px!important;
+}
+.font-size-28 {
+    font-size: 28px!important;
+}
+.line-height-100 {
+    line-height: 100%;
+}
+.line-height-110 {
+    line-height: 110%;
+}
+.line-height-120 {
+    line-height: 120%;
+}
+.line-height-130 {
+    line-height: 130%;
+}
+.line-height-140 {
+    line-height: 140%;
+}
+.line-height-150 {
+    line-height: 150%;
+}
+.line-height-160 {
+    line-height: 160%;
+}
+.line-height-170 {
+    line-height: 170%;
+}
+.line-height-180 {
+    line-height: 180%;
+}
+.drb-button{
+    background: linear-gradient(90deg, #30ACB0 0%, #26D6DC 100%);
+    border-radius: 20px;
+    padding: 6px 19px;
+    outline: none!important;
+    transition: 0.3s
+}
+.drb-button:hover {
+    transform: translateY(-3px);
+    box-shadow:0px 9px 16px rgba(0, 0, 0, 0.28);
+}
+.work-point:after
+{
+    content:'';
+    position: absolute;
+    width: 64px;
+    height: 3px;
+    background-color: #30ACB0;
+    left: 0%;
+    top: 110%;
+}
+.work-point-2:after
+{
+    content:'';
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: #fefefe;
+    left: 0%;
+    top: 110%;
+}
+.drb-button-1 {
+    background: linear-gradient(180deg, #6B4FCA 0%, #9F8AE7 100%);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.drb-button-1:hover, .drb-button-2:hover
+{
+    box-shadow:0px 9px 16px rgba(0, 0, 0, 0.28);
+}
+
+.drb-button-2
+{
+    transition: 0.3s;
+}
+.third-content:before
+{
+    content: '';
+    width: 45px;
+    height: 3px;
+    background-color: #38D0D5;
+    position: absolute;
+    top:-10%;
+    left:0%;
+}
+.menu-point
+{
+    color:#373737;
+}
+.menu-point:hover
+{
+    color: #30ACB0;
+}
+.menuse, #logo{
+    transition: 0.5s;
+}
+.solid-nav {
+    background-color: white;
+}
+.first-preload, .second-preload
+{
+    transition: 0.5s;
+    transform: translateX(0%);
+}
+.left-preload
+{
+    transform: translateX(-100%);
+}
+.right-preload
+{
+    transform: translateX(100%);
+}
+
+.alert-text {
+    display:none;
+}
+.alert:hover .alert-text {
+    display:block;
+}
+.whatsapp-circle
+{
+    animation: 3s trans infinite ease-in-out;
+}
+
+@keyframes trans {
+    0% {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
