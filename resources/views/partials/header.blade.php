@@ -18,7 +18,7 @@
                 <!-- Authentication Links -->
                 <a href="/#main" style="text-decoration: none;">
                     <p class="mb-0 menu-point font-size-14 font-weight-bold mx-4 my-lg-0 my-2">
-                        Главное
+                        Главная
                     </p>
                 </a>
                 <a href="/#services" style="text-decoration: none;">
