@@ -25,4 +25,14 @@ class ServiceController extends Controller
     {
         return view('services.hirurg');
     }
+
+    public function service_5()
+    {
+        return view('services.profil');
+    }
+
+    public function service_6()
+    {
+        return view('services.estetic');
+    }
 }

@@ -26,6 +26,8 @@ Route::get('/service/1', [App\Http\Controllers\ServiceController::class, 'servic
 Route::get('/service/2', [App\Http\Controllers\ServiceController::class, 'service_2'])->name('service/2');
 Route::get('/service/3', [App\Http\Controllers\ServiceController::class, 'service_3'])->name('service/3');
 Route::get('/service/4', [App\Http\Controllers\ServiceController::class, 'service_4'])->name('service/4');
+Route::get('/service/5', [App\Http\Controllers\ServiceController::class, 'service_5'])->name('service/5');
+Route::get('/service/6', [App\Http\Controllers\ServiceController::class, 'service_6'])->name('service/6');
 
 
 Route::group(['prefix' => 'admin'], function () {
