@@ -57,9 +57,22 @@
                             <div class="d-flex align-items-center">
                                 <img src="{{ asset('images/icons/call.svg') }}" alt=""><span class="{{ $agent->isMobile() ? "font-size: 14px;" : "font-size: 18px;" }} font-weight-bold roboto ml-2 work-point position-relative" style="color: #30ACB0;">Контакты</span>
                             </div>
-                            <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1 mt-3">+7 (701) 758-65-44</p>
-                            <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1">+7 (727) 265-39-82</p>
-                            <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1">+7 (701) 788-22-40</p>
+                            <a href="tel:+77272653982">
+                                <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1 mt-3">
+                                    +7 (727) 265-39-82</p>
+                            </a>
+                            <a href="tel:+77017586544">
+                                <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
+                                    +7 (701) 758-65-44</p>
+                            </a>
+                            <a href="tel:+77017882240">
+                                <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
+                                    +7 (701) 788-22-40</p>
+                            </a>
+                            <a href="tel:+77024892027">
+                                <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
+                                    +7 (702) 489-20-27</p>
+                            </a>
 
                         </div>
                     </div>
@@ -149,8 +162,7 @@
                     <div class="third-content position-relative">
                     <h3 class="text-dark roboto" style="{{ $agent->isMobile() ? "font-size: 20px;" : "font-size: 35px;" }}">Основатели <br> клиники</h3>
                     <p class="font-size-16 roboto" style="color: #969696;">
-                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-                    </p>
+                        Стоматология DrBond рада приветствовать Вас. Каждый врач в нашей клинике имеет опыт в профессии более 20 лет. Мы тщательно отбираем материалы и технологии, с которыми работают наши специалисты, чтобы предложить их самому требовательному и грамотному пациенту. Гарантия на все услуги позволяет нашим пациентам чувствовать себя спокойно и уверенно в случае возникнновения нестандартной ситуации.                    </p>
                     </div>
                 </div>
             </div>
@@ -195,14 +207,16 @@
                     <p class="text-dark roboto font-weight-bold" style="{{ $agent->isMobile() ? "font-size: 20px;" : "font-size: 35px;" }}">Отзывы клиентов</p>
 
                     <div class="owl-one owl-carousel text-center">
+                        @foreach(\App\Comment::all() as $comment)
                         <div class="item d-flex">
                             <div class="mr-3 mt-2" style="width:25%; height:1px; background-color: #969696;"></div>
                             <div>
                             <p class="font-size-16 roboto mt-0 text-left" style="color: #969696;">
-                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                {{ $comment->desc }}
                             </p>
                             </div>
                         </div>
+                        @endforeach
                     </div>
 
                     <div class="row mt-5">

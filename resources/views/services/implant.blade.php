@@ -134,14 +134,16 @@
                 <p class="text-dark roboto font-weight-bold" style="{{ $agent->isMobile() ? "font-size: 20px;" : "font-size: 35px;" }}">Отзывы клиентов</p>
 
                 <div class="owl-one owl-carousel text-center">
-                    <div class="item d-flex">
-                        <div class="mr-3 mt-2" style="width:25%; height:1px; background-color: #969696;"></div>
-                        <div>
-                            <p class="font-size-16 roboto mt-0 text-left" style="color: #969696;">
-                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
-                            </p>
+                    @foreach(\App\Comment::all() as $comment)
+                        <div class="item d-flex">
+                            <div class="mr-3 mt-2" style="width:25%; height:1px; background-color: #969696;"></div>
+                            <div>
+                                <p class="font-size-16 roboto mt-0 text-left" style="color: #969696;">
+                                    {{ $comment->desc }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
