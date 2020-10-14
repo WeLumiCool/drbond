@@ -88,7 +88,7 @@
                 <div class="col-lg-3 col-6 mb-4 ml-lg-5 ml-0">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/implant.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Имплантация зубов</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Имплантация зубов</p>
                         <a href="{{route('service/1')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
@@ -99,7 +99,7 @@
                 <div class="col-lg-3 col-6 mb-4">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/lech.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Лечение</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Лечение</p>
                         <a href="{{route('service/2')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
@@ -110,7 +110,7 @@
                 <div class="col-lg-3 col-6 mb-4 mr-lg-5 mr-0">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/protez.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Протезирование</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Протезирование</p>
                         <a href="{{route('service/3')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
@@ -122,7 +122,7 @@
                 <div class="col-lg-3 col-6 mb-4 ml-lg-5 ml-0">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/hirurg.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Хирургия</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Хирургия</p>
                         <a href="{{route('service/4')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
@@ -133,7 +133,7 @@
                 <div class="col-lg-3 col-6 mb-4">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/profil.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Профилактика</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }} font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Профилактика</p>
                         <a href="{{route('service/5')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
@@ -144,7 +144,7 @@
                 <div class="col-lg-3 col-6 mb-4 mr-lg-5 mr-0">
                     <div class="text-center py-lg-5 py-4 px-4 position-relative h-100" style="border-radius: 10px; box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.12);">
                         <img class="w-50" src="{{ asset('images/icons/stom.svg') }}" alt="">
-                        <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-18" }}  font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Эстетическая стоматология</p>
+                        <p class="{{ $agent->isMobile() ? "font-size-12" : "font-size-18" }}  font-weight-bold roboto mt-4 mb-lg-5 mb-4" style="color: #8C8C8C;">Эстетическая стоматология</p>
                         <a href="{{route('service/6')}}">
                         <button class="btn drb-button-1 {{ $agent->isMobile() ? "font-size-6 px-2 py-2" : "font-size-14 px-2 py-2" }} font-weight-bold w-50 text-white" style="position: absolute; bottom:-5%; left: 25%;">
                             Подробнее
