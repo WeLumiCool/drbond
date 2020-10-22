@@ -35,13 +35,16 @@
         <img class="position-absolute img-preload" style="top:50%; left:50%; transform: translate(-50%, -50%); z-index: 1000000;" src="{{ asset('images/icons/mainlogo.svg') }}" alt="">
     </div>
 </div>
+<?php
+    $mainsettings = \App\Mainsetting::find(1);
+?>
     <div id="app">
-        @include('partials.header')
+        @include('partials.header', ['mainsettings' => $mainsettings])
 
         <main>
             @yield('content')
         </main>
-        @include('partials.footer')
+        @include('partials.footer', ['mainsettings' => $mainsettings])
 
         <a href="tel:+77017882240" target="_blank">
             <div class="position-fixed d-flex align-items-center justify-content-center whatsapp-circle alert" style="background-color:  rgba(211, 39, 39, 0.47); height: 80px; width: 80px; border-radius: 50%; bottom: 5%; left: 5%;">

@@ -4,6 +4,7 @@
     use Jenssegers\Agent\Agent;
 
     $agent = new Agent();
+    $mainsettings = \App\Mainsetting::find(1);
     ?>
     <div class="container-fluid py-5 d-flex align-items-center" id="main" style="min-height: 100vh; {{ $agent->isMobile() ? "background-image: url(". asset('images/mainbgmobile.jpg') .");" :  "background-image: url(". asset('images/mainbg.jpg') .");"}}  background-size: cover; background-position: center;">
         <div class="container">
@@ -30,26 +31,26 @@
                             </div>
                             <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #373737;">
                                 <div class="col-6 px-0">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">Понедельник- Пятница</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->work1 }}</p>
                                 </div>
                                 <div class="col-6 px-0 text-right">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">9:00 - 19:00</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->worktime1 }}</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-1" style="border-bottom: 1px solid #373737;">
                                 <div class="col-6 px-0">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">Суббота</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->work2 }}</p>
                                 </div>
                                 <div class="col-6 px-0 text-right">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">9:00 - 14:00</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->worktime2 }}</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-1">
                                 <div class="col-6 px-0">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">Воскресенье</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->work3 }}</p>
                                 </div>
                                 <div class="col-6 px-0 text-right">
-                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">Выходной</p>
+                                    <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold roboto mb-1" style="color: #373737">{{ $mainsettings->worktime3 }}</p>
                                 </div>
                             </div>
                         </div>
@@ -57,21 +58,21 @@
                             <div class="d-flex align-items-center">
                                 <img src="{{ asset('images/icons/call.svg') }}" alt=""><span class="{{ $agent->isMobile() ? "font-size: 14px;" : "font-size: 18px;" }} font-weight-bold roboto ml-2 work-point position-relative" style="color: #30ACB0;">Контакты</span>
                             </div>
-                            <a href="tel:+77272653982">
+                            <a href="tel:{{ $mainsettings->phone1 }}">
                                 <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1 mt-3">
-                                    +7 (727) 265-39-82</p>
+                                    {{ $mainsettings->phone1 }}</p>
                             </a>
-                            <a href="tel:+77017586544">
+                            <a href="tel:{{ $mainsettings->phone2 }}">
                                 <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
-                                    +7 (701) 758-65-44</p>
+                                    {{ $mainsettings->phone2 }}</p>
                             </a>
-                            <a href="tel:+77017882240">
+                            <a href="tel:{{ $mainsettings->phone3 }}">
                                 <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
-                                    +7 (701) 788-22-40</p>
+                                    {{ $mainsettings->phone3 }}</p>
                             </a>
-                            <a href="tel:+77024892027">
+                            <a href="tel:{{ $mainsettings->phone4 }}">
                                 <p class="{{ $agent->isMobile() ? "font-size-10" : "font-size-14" }} font-weight-bold text-dark roboto mb-1">
-                                    +7 (702) 489-20-27</p>
+                                    {{ $mainsettings->phone4 }}</p>
                             </a>
 
                         </div>

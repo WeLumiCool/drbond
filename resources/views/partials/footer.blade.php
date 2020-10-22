@@ -10,18 +10,18 @@
                 <div class="d-flex align-items-center">
                     <img src="{{ asset('images/icons/call2.svg') }}" alt=""><span class="font-size-16 font-weight-bold roboto ml-2 work-point-2 position-relative" style="color: #fefefe;">Контакты</span>
                 </div>
-                <a href="tel:+77272653982">
-                    <p class="font-size-12 font-weight-normal roboto mb-1 mt-2 text-white">+7 (727) 265-39-82</p>
+                <a href="tel:{{ $mainsettings->phone1 }}">
+                    <p class="font-size-12 font-weight-normal roboto mb-1 mt-2 text-white">{{ $mainsettings->phone1 }}</p>
                 </a>
-                <a href="tel:+77017586544">
-                        <p class="font-size-12 font-weight-normal roboto mb-1 text-white">+7 (701) 758-65-44</p>
+                <a href="tel:{{ $mainsettings->phone2 }}">
+                        <p class="font-size-12 font-weight-normal roboto mb-1 text-white">{{ $mainsettings->phone2 }}</p>
                 </a>
 
-                <a href="tel:+77017882240">
-                        <p class="font-size-12 font-weight-normal roboto mb-1 text-white">+7 (701) 788-22-40</p>
+                <a href="tel:{{ $mainsettings->phone3 }}">
+                        <p class="font-size-12 font-weight-normal roboto mb-1 text-white">{{ $mainsettings->phone3 }}</p>
                 </a>
-                <a href="tel:+77024892027">
-                    <p class="font-size-12 font-weight-normal roboto mb-0 text-white">+7 (702) 489-20-27</p>
+                <a href="tel:{{ $mainsettings->phone4 }}">
+                    <p class="font-size-12 font-weight-normal roboto mb-0 text-white">{{ $mainsettings->phone4 }}</p>
                 </a>
             </div>
             <div class="col-7">
