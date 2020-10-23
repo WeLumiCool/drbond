@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome',['articles' => \Illuminate\Support\Facades\DB::table('articles')->inRandomOrder()->limit(4)->get()]);
+    return view('welcome',['articles' => \Illuminate\Support\Facades\DB::table('articles')->inRandomOrder()->limit(4)->get(), 'services' => \App\Service::all()]);
 });
 
 Auth::routes();
@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/articles', [App\Http\Controllers\ArticleController::class, 'articles'])->name('articles');
 Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'show'])->name('article');
-Route::get('/service/1', [App\Http\Controllers\ServiceController::class, 'service_1'])->name('service/1');
+Route::get('/service/{id}', [App\Http\Controllers\ServiceController::class, 'service'])->name('service');
 Route::get('/service/2', [App\Http\Controllers\ServiceController::class, 'service_2'])->name('service/2');
 Route::get('/service/3', [App\Http\Controllers\ServiceController::class, 'service_3'])->name('service/3');
 Route::get('/service/4', [App\Http\Controllers\ServiceController::class, 'service_4'])->name('service/4');

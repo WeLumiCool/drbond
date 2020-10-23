@@ -2,10 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+    public function service($id)
+    {
+        $service = Service::find($id);
+
+        return view('services.show', ['service' => $service]);
+    }
     public function service_1()
     {
         return view('services.implant');

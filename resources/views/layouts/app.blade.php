@@ -35,9 +35,11 @@
         <img class="position-absolute img-preload" style="top:50%; left:50%; transform: translate(-50%, -50%); z-index: 1000000;" src="{{ asset('images/icons/mainlogo.svg') }}" alt="">
     </div>
 </div>
-<?php
-    $mainsettings = \App\Mainsetting::find(1);
-?>
+
+    <?php
+        $mainsettings = \App\Mainsetting::find(1);
+    ?>
+
     <div id="app">
         @include('partials.header', ['mainsettings' => $mainsettings])
 
@@ -46,7 +48,7 @@
         </main>
         @include('partials.footer', ['mainsettings' => $mainsettings])
 
-        <a href="tel:+77017882240" target="_blank">
+        <a href="tel:{{ $mainsettings->need }}" target="_blank">
             <div class="position-fixed d-flex align-items-center justify-content-center whatsapp-circle alert" style="background-color:  rgba(211, 39, 39, 0.47); height: 80px; width: 80px; border-radius: 50%; bottom: 5%; left: 5%;">
                 <div class="position-relative d-flex align-items-center justify-content-center" style="background-color: rgba(211, 39, 39, 0.47); height: 70px; width: 70px; border-radius: 50%;">
                     <div class="position-relative d-flex align-items-center justify-content-center" style="background-color: #D32727; height: 60px; width: 60px; border-radius: 50%; z-index: 9999;">
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </a>
-        <a href="http://api.whatsapp.com/send?phone=77017882240" target="_blank">
+        <a href="{{ $mainsettings->whatsapp }}" target="_blank">
         <div class="position-fixed d-flex align-items-center justify-content-center whatsapp-circle alert" style="background-color:  rgba(15, 166, 57, 0.47); height: 80px; width: 80px; border-radius: 50%; bottom: 5%; right: 5%;">
         <div class="position-relative d-flex align-items-center justify-content-center" style="background-color: rgba(15, 166, 57, 0.47); height: 70px; width: 70px; border-radius: 50%;">
             <div class="position-relative d-flex align-items-center justify-content-center" style="background-color: #0FA639; height: 60px; width: 60px; border-radius: 50%; z-index: 9999;">

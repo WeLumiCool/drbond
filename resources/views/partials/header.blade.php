@@ -41,7 +41,7 @@
                         Статьи
                     </p>
                 </a>
-                <a class="d-lg-block d-none" href="tel:+77017882240" style="text-decoration: none;">
+                <a class="d-lg-block d-none" href="tel:{{ $mainsettings->visit }}" style="text-decoration: none;">
                     <button class="btn drb-button text-white font-weight-normal roboto py-1 px-3" style="background-color: #30ACB0;">
                         Запись на бесплатную консультацию
                     </button>
